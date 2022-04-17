@@ -1,0 +1,10 @@
+<div class="film-list-item">
+  <div class="film-list-item__image-container">
+    <img [src]="film?.image" [alt]="film?.name" class="image">
+  </div>
+  <div class="film-list-item__info-container">
+    <p class="film-list-item__info-container_name">{{film?.name}}</p>
+    <p class="film-list-item__info-container_year"><strong>Year: </strong>{{film?.year}}</p>
+    <p class="film-list-item__info-container_grosses"><strong>Grosses: $</strong>{{film?.grosses | numberSuffix}}</p>
+  </div>
+</div>

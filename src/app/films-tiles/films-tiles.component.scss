@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.films-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    font-family: Montserrat;
+    font-size: 16px;
+
+  }
+
+}

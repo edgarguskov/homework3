@@ -1,0 +1,13 @@
+<div class="film-tile">
+  <div class="film-tile__image-container">
+    <img [src]="film?.image" [alt]="film?.name" class="image">
+  </div>
+  <div class="film-tile__info-container">
+    <p class="film-tile__info-container_name">{{film?.name}}</p>
+    <div class="column-wrapper">
+      <p class="film-tile__info-container_year">{{film?.year}}</p>
+      <p class="film-tile__info-container_grosses">${{film?.grosses | numberSuffix}}</p>
+    </div>
+  </div>
+
+</div>
