@@ -3,10 +3,20 @@
     <img [src]="film?.image" [alt]="film?.name" class="image">
   </div>
   <div class="film-tile__info-container">
+    <div class="film-tile__info-container-heading">
     <p class="film-tile__info-container_name">{{film?.name}}</p>
+      <button class="film-tile__info-container_button" mat-button color="primary" (click)="isFavorite() ? deleteFavorite() : addToFavorite()">
+        <mat-icon [ngStyle]="{'color': isFavorite()?'red': 'white'}">favorite</mat-icon>
+      </button>
+    </div>
     <div class="column-wrapper">
       <p class="film-tile__info-container_year">{{film?.year}}</p>
       <p class="film-tile__info-container_grosses">${{film?.grosses | numberSuffix}}</p>
+      <p class="film-tile__info-container_actors">Actors: {{film?.actors}}</p>
+      <p class="film-tile__info-container_actors">On Site From: {{film?.onSite | date:'dd/MM/yyyy'}}</p>
+      <button class="film-tile__delete" mat-button color="primary" (click)="onDelete()">
+        <mat-icon>delete</mat-icon>
+      </button>
     </div>
   </div>
 

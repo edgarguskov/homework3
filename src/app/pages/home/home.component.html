@@ -1,0 +1,27 @@
+<div class="page-heading">
+  <h1 class="page-title">Films List</h1>
+  <button (click)="toggleView()" mat-raised-button color="primary" class="toggle-view__button">
+    <mat-icon *ngIf="!isListView">view_list</mat-icon>
+    <mat-icon *ngIf="isListView">grid_view</mat-icon>
+  </button>
+  <button (click)="openAddFilmModal()" class="add-film__button" mat-button color="primary">Add Film
+  </button>
+  <div class="filter">
+    <label class="active" for="first_name2"><span class="toggle-theme">Search film by name:</span></label>
+    <input value="" id="first_name2" type="text" class="validate" (input)="onFilter()" [(ngModel)]="filterInput">
+  </div>
+  <div class="sort">
+    <mat-form-field>
+      <mat-select placeholder="Sort By:" (selectionChange)="onSort($event.value)">
+        <mat-option *ngFor="let option of sortOptionList" [value]="option.id">{{option.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</div>
+<ng-template [ngIf]="!isListView" [ngIfElse]="listView">
+  <app-films-tiles [films]="filteredFilms"></app-films-tiles>
+</ng-template>
+<ng-template #listView>
+  <app-films-list [films]="filteredFilms"></app-films-list>
+</ng-template>

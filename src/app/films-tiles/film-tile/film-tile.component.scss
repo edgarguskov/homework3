@@ -1,14 +1,18 @@
 @import "../../../assets/styles/colors";
 
 .film-tile {
-  height: 500px;
+  height: auto;
   width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: $base-blue;
-  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 14px 8px rgba(34, 60, 80, 0.2);
   border-radius: 10px;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
   &__image-container {
     width: 100%;
     height: 400px;
@@ -25,8 +29,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px 12px;
-    height: 100px;
+    min-height: 100px;
     color: $white;
+
+    &-heading {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
     &_name {
       font-size: 22px;
       text-transform: uppercase;

@@ -6,5 +6,15 @@
     <p class="film-list-item__info-container_name">{{film?.name}}</p>
     <p class="film-list-item__info-container_year"><strong>Year: </strong>{{film?.year}}</p>
     <p class="film-list-item__info-container_grosses"><strong>Grosses: $</strong>{{film?.grosses | numberSuffix}}</p>
+    <p class="film-list-item__info-container_actors">Actors: {{film?.actors}}</p>
+    <p class="film-list-item__info-container_actors">On Site From: {{film?.onSite | date:'dd/MM/yyyy'}}</p>
+    <div class="film-list-item__info-container_actions">
+    <button class="film-tile-item__delete" mat-button color="primary" (click)="isForFavorite ? onDeleteFavorite() : onDelete()">
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button class="film-tile__info-container_button" mat-button color="primary" (click)="isFavorite() ? deleteFavorite() : addToFavorite()" *ngIf="!isForFavorite">
+      <mat-icon [ngStyle]="{'color': isFavorite()?'red': 'white'}">favorite</mat-icon>
+    </button>
+    </div>
   </div>
 </div>

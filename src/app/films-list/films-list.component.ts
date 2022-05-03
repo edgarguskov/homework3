@@ -8,6 +8,7 @@ import {FilmInterface} from "../../common/intefaces/film.interface";
 })
 export class FilmsListComponent implements OnInit {
   @Input() films: FilmInterface[] | null = null;
+  @Input() isForFavorite: boolean = false
   constructor() { }
 
   ngOnInit(): void {

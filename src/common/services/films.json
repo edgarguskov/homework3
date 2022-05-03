@@ -1,74 +1,110 @@
 [
   {
     "name": "Avatar",
-    "year": "2009",
+    "year": 2009,
     "image": "https://upload.wikimedia.org/wikipedia/ru/4/4b/Avatar-2009.jpg",
-    "grosses": 2847379794
+    "grosses": 2847379794,
+    "id": "1",
+    "actors" : ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
+    "onSite" : 1650375326962
   },
   {
     "name": "The Avengers",
-    "year": "2012",
+    "year": 2012,
     "image": "https://upload.wikimedia.org/wikipedia/ru/3/3c/The_Avengers_2012_logo.jpg",
-    "grosses": 1518815515
+    "grosses": 1518815515,
+    "id": "2",
+    "actors" : ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+    "onSite" : 1650275326962
   },
   {
     "name": "Spider-Man 3",
-    "year": "2007",
+    "year": 2007,
     "image": "https://upload.wikimedia.org/wikipedia/ru/7/7a/Spider-Man_3%2C_International_Poster.jpg",
-    "grosses": 894983373
+    "grosses": 894983373,
+    "id": "3",
+    "actors" : ["Tobey Maguire", "Kirsten Dunst", "James Franco"],
+    "onSite" : 1650575326962
   },
   {
     "name": "Aquaman",
-    "year": "2018",
+    "year": 2018,
     "image": "https://upload.wikimedia.org/wikipedia/ru/0/0a/%D0%90%D0%BA%D0%B2%D0%B0%D0%BC%D0%B5%D0%BD.jpg",
-    "grosses": 1148528393
+    "grosses": 1148528393,
+    "id": "4",
+    "actors" : ["Jason Momoa", "Amber Heard", "Willem Dafoe"],
+    "onSite" : 1650475326962
   },
   {
     "name": "Casino Royale",
-    "year": "2006",
+    "year": 2006,
     "image": "https://thumbs.dfs.ivi.ru/storage2/contents/5/6/32d48310fc021364e9d2585d19abd4.jpg",
-    "grosses": 616502912
+    "grosses": 616502912,
+    "id": "5",
+    "actors" : ["Daniel Craig", "Eva Green", "Mads Mikkelsen"],
+    "onSite" : 1650675326962
   },
   {
     "name": "Venom",
-    "year": "2018",
+    "year": 2018,
     "image": "https://upload.wikimedia.org/wikipedia/ru/0/05/Venom_poster.jpg",
-    "grosses": 856085151
+    "grosses": 856085151,
+    "id": "6",
+    "actors" : ["Tom Hardy", "Michelle Williams", "Riz Ahmed"],
+    "onSite" : 1650775326962
   },
   {
     "name": "Titanic",
-    "year": "1997",
+    "year": 1997,
     "image": "https://upload.wikimedia.org/wikipedia/uk/3/3f/Tytanik_%28UKR_Poster%2C_2012%29.jpg",
-    "grosses": 2847379794
+    "grosses": 2847379794,
+    "id": "7",
+    "actors" : ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+    "onSite" : 1650875326962
   },
   {
     "name": "Iron Man 3",
-    "year": "2014",
+    "year": 2014,
     "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/272776a1-9beb-45a9-8e02-867ba9c7f571/600x900",
-    "grosses": 1214811252
+    "grosses": 1214811252,
+    "id": "8",
+    "actors" : ["Robert Downey Jr.", "Gwyneth Paltrow", "Don Cheadle"],
+    "onSite" : 1650975326962
   },
   {
-    "name": "The Da Vinci Code",
-    "year": "2006",
+    "name": "Da Vinci Code",
+    "year": 2006,
     "image": "https://m.media-amazon.com/images/M/MV5BMjIxMjQyMTc3Nl5BMl5BanBnXkFtZTcwMTA1MDUzMw@@._V1_.jpg",
-    "grosses": 760006945
+    "grosses": 760006945,
+    "id": "9",
+    "actors" : ["Tom Hanks", "Audrey Tautou", "Ian McKellen"],
+    "onSite" : 1651075326962
   },
   {
-    "name": "I Am Legend",
-    "year": "2007",
+    "name": "I am Legend",
+    "year": 2007,
     "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/60692c49-3ca0-46ed-92d4-db37636f8d5b/300x450",
-    "grosses": 585410052
+    "grosses": 585410052,
+    "id": "10",
+    "actors" : ["Will Smith", "Alice Braga", "Charlie Tahan"],
+    "onSite" : 1651175326962
   },
   {
     "name": "World War Z",
-    "year": "2013",
+    "year": 2013,
     "image": "https://upload.wikimedia.org/wikipedia/ru/f/fa/World_War_Z.jpg",
-    "grosses": 760006945
+    "grosses": 760006945,
+    "id": "11",
+    "actors" : ["Brad Pitt", "Mireille Enos", "Daniella Kertesz"],
+    "onSite" : 1651275326962
   },
   {
-    "name": "Basketball Diaries",
-    "year": "1996",
+    "name": "Basketball D.",
+    "year": 1996,
     "image": "https://m.media-amazon.com/images/M/MV5BMjdlNzQxZGUtZTg5YS00ODg2LTkxMzctMDAyNmEwM2YyZjA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
-    "grosses": 931562
+    "grosses": 931562,
+    "id": "12",
+    "actors" : ["Leonardo DiCaprio", "Lorraine Bracco", "Marilyn Sokol"],
+    "onSite" : 1651375326962
   }
 ]

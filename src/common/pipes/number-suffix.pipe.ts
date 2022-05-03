@@ -1,10 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'numberSuffix'
+  name: 'numberSuffix',
 })
 export class NumberSuffixPipe implements PipeTransform {
-
   transform(input: any, args?: any): any {
     let exp,
       suffixes = ['k', 'M', 'G', 'T', 'P', 'E'];
@@ -20,8 +19,5 @@ export class NumberSuffixPipe implements PipeTransform {
     exp = Math.floor(Math.log(input) / Math.log(1000));
 
     return (input / Math.pow(1000, exp)).toFixed(args) + suffixes[exp - 1];
-
-
   }
-
 }

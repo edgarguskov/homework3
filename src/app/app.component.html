@@ -3,17 +3,5 @@
   [isDarkMode]="isDarkMode"
 ></app-navigation>
 <main class="content">
-  <div class="page-heading">
-    <h1 class="page-title">Films List</h1>
-    <button (click)="toggleView()" mat-raised-button color="primary" class="toggle-view__button">
-      <mat-icon *ngIf="!isListView">view_list</mat-icon>
-      <mat-icon *ngIf="isListView">grid_view</mat-icon>
-    </button>
-  </div>
-  <ng-template [ngIf]="!isListView" [ngIfElse]="listView">
-    <app-films-tiles [films]="films"></app-films-tiles>
-  </ng-template>
-  <ng-template #listView>
-    <app-films-list [films]="films"></app-films-list>
-  </ng-template>
+<router-outlet></router-outlet>
 </main>

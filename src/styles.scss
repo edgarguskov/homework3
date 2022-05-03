@@ -17,21 +17,58 @@ body {
   margin: 0;
 }
 
-.theme-dark {
-  @include app-theme($mat-dark-theme);
-  h1 {
-    color: $white;
-  }
-}
+
 .theme-light {
   @include app-theme($mat-light-theme);
   button.mat-primary {
     background-color: $base-blue!important;
-    mat-icon {
+    &.mat-button-disabled {
+      background: gray !important;
+    }
+
+    mat-icon,span {
       color: $white;
     }
   }
-  h1 {
+  h1, .toggle-theme {
     color: $black;
   }
 }
+
+.theme-dark {
+  @include app-theme($mat-dark-theme);
+  h1, .toggle-theme {
+    color: $white;
+
+  }
+  .film-tile {
+    button.mat-primary {
+      background-color: transparent !important;
+    }
+  }
+  .film-tile__delete {
+    color: $white;
+  }
+  .film-list-item {
+    button.mat-primary {
+      background-color: transparent !important;
+    }
+  }
+  .film-tile-item__delete {
+    color: $white;
+  }
+}
+
+.add-films-modal-container {
+  overflow: auto;
+  min-width: 420px;
+  @media (max-width: 420px) {
+    width: 100%;
+    min-width: unset;
+  }
+  .mat-dialog-container {
+    background-color: white;
+    padding-left: 5px;
+  }
+}
+

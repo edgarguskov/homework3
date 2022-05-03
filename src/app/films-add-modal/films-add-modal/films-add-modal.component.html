@@ -1,0 +1,47 @@
+<form [formGroup]="form">
+  <div class="form-group">
+    <label class="form-group__label">Name: </label><br>
+    <mat-form-field appearance="outline">
+      <input placeholder="Name" type="text" class="form-group__input" matInput [formControlName]="'name'">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <label class="form-group__label">Year: </label><br>
+    <mat-form-field appearance="outline">
+      <input placeholder="Year" type="text" class="form-group__input" matInput [formControlName]="'year'">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <label class="form-group__label">Grosses: </label><br>
+    <mat-form-field appearance="outline">
+      <input placeholder="Grosses" type="text" class="form-group__input" matInput [formControlName]="'grosses'">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <label class="form-group__label">Actors: </label><br>
+    <button class="addActor" mat-button color="primary" (click)="addActor()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <div *ngFor="let control of actorsGetter.controls; index as i">
+      <mat-form-field appearance="outline">
+        <input [formControl]="$any(actorsGetter.controls[i])" matInput />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-group__label">Image URL: </label><br>
+    <mat-form-field appearance="outline">
+      <input id="poster" type="text" class="form-group__input-image" matInput [formControlName]="'image'">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <button id="save" type="button" mat-button class="form-group__button-save" color="primary" (click)="onSave()"
+            [disabled]="isValidForm()">Save
+    </button>
+  </div>
+</form>
